@@ -10,13 +10,11 @@ SUITE_CASES_C = suite_*.c
 SUITE_CASES_O = suite_*.o
 
 all: clean gcov_report
-# --- СОЗДАНИЕ БИБЛИОТЕКИ ФУНКЦИЙ ---
 
 s21_math.a:
 	$(CC) $(FLAG_C) $(FLAG_ER) $(s21_MATH_C) 
 	ar rc s21_math.a $(s21_MATH_O)
 	ranlib s21_math.a
-# --- СОЗДАНИЕ БИБЛИОТЕКИ ТЕСТОВ И ИСПОЛНЕНИЕ ---
 
 test: s21_math.a
 	$(CC) $(FLAG_C) $(FLAG_ER) $(SUITE_CASES_C) main.c
@@ -24,7 +22,6 @@ test: s21_math.a
 	ranlib suite_cases.a
 	$(CC) $(FLAG_ER) $(FLAG_COV) $(FLAG_O) tests s21_math.a suite_cases.a $(s21_MATH_C) main.o -lcheck
 	./tests
-# --- ФОРМИРОВАНИЕ ОТЧЕТА О ПОКРЫТИИ ---
 
 gcov_report: test
 	gcov s21_*.gcda	
