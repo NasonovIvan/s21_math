@@ -37,8 +37,8 @@ C mathematical operations are a group of functions in the standard library of th
 
 ## Start program
 
-Use ```git clone``` to copy the project.
-Then enter the following command in the directory:
+Use ```git clone https://github.com/NasonovIvan/s21_math.git``` to copy the project.
+Then enter the following command in the s21_math directory:
 
 To create a library, test its functions and get a [gcovr](https://gcovr.com/en/stable/) html-report on the coverage of functions with tests:
 ```sh
