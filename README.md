@@ -1,7 +1,7 @@
 # s21_math
 ## Introduction
 
-In this project you will develop your own version of the standard math.h library in the C programming language. This library implements basic mathematical operations, which are then used in various algorithms. As part of the project you will learn the basics of computational methods and solidify knowledge of structured programming.
+In this project I developed my own version of the standard math.h library in the C programming language. This library implements basic mathematical operations, which are then used in various algorithms.
 
 ## Information
 
@@ -34,3 +34,30 @@ C mathematical operations are a group of functions in the standard library of th
 - Unit tests cover at least 80% of each function (check using gcov)
 - The total verifiable accuracy is 16 significant digits
 - Verifiable accuracy of the fractional part is up to 6 decimal places.
+
+## Start program
+
+Use ```sh git clone ``` to copy the project.
+Then enter the following command in the C4 folder:
+
+To create a library, test its functions and get a [gcovr](https://gcovr.com/en/stable/) *.html* report on the coverage of functions with tests:
+```sh
+make
+```
+
+For building the library *s21_math.a*:
+```sh
+make s21_math.a
+```
+
+For testing the functions:
+```sh
+make test
+```
+
+If you want to check the code using *cppcheck*, *leaks* or *valgrind*, use the command:
+```sh
+make check
+```
+
+>The commands assume that you have a gcc compiler and some utilities installed!
