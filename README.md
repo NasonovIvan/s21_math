@@ -37,10 +37,10 @@ C mathematical operations are a group of functions in the standard library of th
 
 ## Start program
 
-Use ```sh git clone ``` to copy the project.
+Use ```git clone``` to copy the project.
 Then enter the following command in the C4 folder:
 
-To create a library, test its functions and get a [gcovr](https://gcovr.com/en/stable/) *.html* report on the coverage of functions with tests:
+To create a library, test its functions and get a [gcovr](https://gcovr.com/en/stable/) html-report on the coverage of functions with tests:
 ```sh
 make
 ```
